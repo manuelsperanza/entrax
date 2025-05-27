@@ -1,4 +1,4 @@
-# 📦 My Project
+# 📦 EnTrAX (Encrypted Traffic Analyser X)
 
 A Python project with a custom CLI and dependency management using `pyproject.toml`.
 
