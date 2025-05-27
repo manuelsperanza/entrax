@@ -1,0 +1,2 @@
+[console_scripts]
+entrax = entrax.cli:main

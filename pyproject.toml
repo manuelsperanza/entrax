@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "entrax"
+version = "0.1.0"
+description = ""
+
+requires-python = ">=3.8"
+dependencies = [
+    "pytest",
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "pyshark",
+    "matplotlib",
+    "seaborn",
+    "mypy",
+    "pandas-stubs",
+    "types-seaborn",
+    "argcomplete",
+    "graphviz",
+    "scipy",
+    "scipy-stubs",
+]
+
+[tool.setuptools]
+packages = ["entrax", "entrax.utils", "entrax.pcap_processing", "entrax.tree_models"]
+
+[project.scripts]
+entrax = "entrax.cli:main"

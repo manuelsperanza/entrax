@@ -1,0 +1,9 @@
+pytest
+numpy
+pandas
+scapy
+scikit-learn
+pyshark
+matplotlib
+seaborn
+argcomplete

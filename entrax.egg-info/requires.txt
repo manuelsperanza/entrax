@@ -1,0 +1,14 @@
+pytest
+numpy
+pandas
+scikit-learn
+pyshark
+matplotlib
+seaborn
+mypy
+pandas-stubs
+types-seaborn
+argcomplete
+graphviz
+scipy
+scipy-stubs
