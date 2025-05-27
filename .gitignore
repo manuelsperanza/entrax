@@ -1,0 +1,14 @@
+#ignore vscode
+.vscode
+
+.mypy_cache
+pynguin-report/
+
+# Ignore Venv
+EnTrAX/
+# Ignore
+entrax.egg-info/
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+.pytest_cache/
