@@ -1,10 +1,10 @@
-# 📦 EnTrAX (Encrypted Traffic Analyser X)
+# EnTrAX (Encrypted Traffic Analyser X)
 
-EnTrAX is a Python toolkit and CLI for processing PCAP traffic captures, generating flow/feature datasets, and running analysis workflows. It includes utilities for dataset inspection and classic tree-based models (CART, Random Forest, Boosting) used in traffic classification experiments.
+EnTrAX is a toolkit and CLI for processing PCAP traffic captures, generating flow/feature datasets, and running analysis workflows. It includes utilities for dataset inspection and classic tree-based models (CART, Random Forest, Boosting) used in traffic classification experiments.
 
 The project is packaged with `pyproject.toml` and exposes a command-line interface via `entrax`.
 
-## 📂 Project Structure
+## Project Structure
 
 A high-level overview of the repository:
 
@@ -20,7 +20,7 @@ entrax/
 └── .gitignore            # Git ignore rules
 ```
 
-## 📋 Prerequisites
+## Prerequisites
 
 Ensure you have **Python 3.8+** and **pip** installed.
 
@@ -36,7 +36,7 @@ python -m venv venvName
 .\venv\Scripts\activate
 ```
 
-## 🚀 Installation
+## Installation
 
 1. Clone the repository:
 
@@ -72,7 +72,7 @@ For **Zsh users**, replace `~/.bashrc` with `~/.zshrc`.
 
 This installs dependencies and registers your CLI tool.
 
-## 🛠️ Usage
+## Usage
 
 ### Run the CLI
 
