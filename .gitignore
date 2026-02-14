@@ -5,7 +5,7 @@
 pynguin-report/
 
 # Ignore Venv
-EnTrAX/
+venv/
 # Ignore
 entrax.egg-info/
 # Ignore compiled Python files

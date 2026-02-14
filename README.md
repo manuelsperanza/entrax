@@ -1,50 +1,23 @@
 # 📦 EnTrAX (Encrypted Traffic Analyser X)
 
-A Python project with a custom CLI and dependency management using `pyproject.toml`.
+EnTrAX is a Python toolkit and CLI for processing PCAP traffic captures, generating flow/feature datasets, and running analysis workflows. It includes utilities for dataset inspection and classic tree-based models (CART, Random Forest, Boosting) used in traffic classification experiments.
+
+The project is packaged with `pyproject.toml` and exposes a command-line interface via `entrax`.
 
 ## 📂 Project Structure
 
-A high-level overview of the project's directories and their purpose:
+A high-level overview of the repository:
 
 ```
 entrax/
-├── data/                # Top-level data directory
-│   ├── dataset/         # Raw PCAP datasets
-│   ├── features/        # Extracted feature CSV files
-│   ├── flows/           # Generated flow CSV files
-│   └── logs/            # Processing logs
-├── entrax/                # Main Python package
-│   ├── __init__.py      # Package initializer
-│   ├── cli.py           # CLI entry point
-│   ├── pcap_processing/ # PCAP to flow and feature modules
-│   │   ├── dataset_analyser.py    # Dataset analysis routines
-│   │   ├── flow.py               # Flow data model
-│   │   ├── flows_analyser.py      # Flow analysis routines
-│   │   ├── get_features_by_flow.py # Extract features per flow
-│   │   └── get_flows_by_pcap.py   # Extract flows from PCAP
-│   ├── tree_models/      # Decision tree and ensemble models
-│   │   ├── __init__.py  # Tree models module initializer
-│   │   ├── boost.py     # AdaBoost implementation
-│   │   ├── cart.py      # CART decision tree implementation
-│   │   ├── model.py     # Base tree model classes
-│   │   └── random_forest.py # Random Forest implementation
-│   └── utils/           # Utility functions and helpers
-│       ├── __init__.py  # Utils module initializer
-│       ├── constants.py # Constant values and enums
-│       ├── data.py      # Data loading and saving functions
-│       ├── general.py   # General-purpose helpers
-│       ├── IO.py        # Input/output routines
-│       ├── log.py       # Logging utilities
-│       ├── metrics.py   # Performance and evaluation metrics
-│       └── numeric.py   # Numeric helper functions
-├── tests/               # Test suites
-│   ├── integration_tests/ # End-to-end integration tests
-│   └── unit_tests/        # Unit tests for individual components
-│       ├── __init__.py
-│       └── test_flow.py
-├── pyproject.toml       # Project metadata & build configuration
-├── requirements.txt     # Pinned dependency list
-└── rsync_to_uni_pc.sh   # Script to sync files with university PC
+├── entrax/               # Main Python package
+│   ├── cli.py            # CLI entry point
+│   ├── pcap_processing/  # PCAP → flows/features + analysis helpers
+│   ├── tree_models/      # CART, Random Forest, Boosting implementations
+│   └── utils/            # IO, logging, constants, and helper utilities
+├── tests/                # Unit and module tests
+├── pyproject.toml        # Project metadata & build configuration
+└── .gitignore            # Git ignore rules
 ```
 
 ## 📋 Prerequisites
@@ -195,7 +168,6 @@ git reset --soft HEAD~1
 ```
 
 This allows you to recover from mistakes and maintain a clean project history.
-
 
 
 
