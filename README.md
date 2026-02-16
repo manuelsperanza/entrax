@@ -1,8 +1,8 @@
-# 📦 EnTrAX (Encrypted Traffic Analyser X)
+# EnTrAX (Encrypted Traffic Analyser X)
 
 A Python project with a custom CLI and dependency management using `pyproject.toml`.
 
-## 📂 Project Structure
+## Project Structure
 
 A high-level overview of the project's directories and their purpose:
 
@@ -47,7 +47,7 @@ entrax/
 └── rsync_to_uni_pc.sh   # Script to sync files with university PC
 ```
 
-## 📋 Prerequisites
+## Prerequisites
 
 Ensure you have **Python 3.8+** and **pip** installed.
 
@@ -63,7 +63,7 @@ python -m venv venvName
 .\venv\Scripts\activate
 ```
 
-## 🚀 Installation
+## Installation
 
 1. Clone the repository:
 
@@ -99,7 +99,7 @@ For **Zsh users**, replace `~/.bashrc` with `~/.zshrc`.
 
 This installs dependencies and registers your CLI tool.
 
-## 🛠️ Usage
+## Usage
 
 ### Run the CLI
 
@@ -195,9 +195,3 @@ git reset --soft HEAD~1
 ```
 
 This allows you to recover from mistakes and maintain a clean project history.
-
-
-
-
-
-
