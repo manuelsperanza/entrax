@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "entrax"
-version = "0.1.0"
-description = ""
+version = "1.0.0"
+description = "A Python toolkit and CLI for processing PCAP traffic captures, generating flow/feature datasets, and running analysis workflows. It includes utilities for dataset inspection and classic tree-based models (CART, Random Forest, Boosting) used in traffic classification experiments."
 
 requires-python = ">=3.8"
 dependencies = [
